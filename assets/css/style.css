@@ -1,4 +1,5 @@
-{
+/* So padding and border no longer increase width. */
+* {
   box-sizing: border-box;
 }
 
@@ -233,4 +234,22 @@ footer {
 #project-portfolio {
 	padding: 15px;
 	height: 500px;
+}
+
+@media only screen and (max-width: 980px) {
+    body {
+        background-color: blue;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        background-color: blue;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    header { position: static;
+       		background-color: blue;
+    }
 }
